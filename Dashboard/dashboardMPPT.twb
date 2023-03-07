@@ -1,0 +1,2535 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Persentasi akses sanitasi' datatype='real' name='[Parameter 10]' param-domain-type='any' role='measure' type='quantitative' value='13.'>
+        <calculation class='tableau' formula='13.' />
+      </column>
+      <column caption='Curah Hujan' datatype='real' name='[Parameter 11]' param-domain-type='any' role='measure' type='quantitative' value='14.'>
+        <calculation class='tableau' formula='14.' />
+      </column>
+      <column caption='Suhu Minimum' datatype='real' name='[Parameter 12]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+        <calculation class='tableau' formula='7.' />
+      </column>
+      <column caption='Suhu Maksimum' datatype='real' name='[Parameter 13]' param-domain-type='any' role='measure' type='quantitative' value='9.'>
+        <calculation class='tableau' formula='9.' />
+      </column>
+      <column caption='Total Hari Hujan' datatype='real' name='[Parameter 14]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+        <calculation class='tableau' formula='15.' />
+      </column>
+      <column caption='Luas Wilayah' datatype='real' name='[Parameter 15]' param-domain-type='any' role='measure' type='quantitative' value='11.'>
+        <calculation class='tableau' formula='11.' />
+      </column>
+      <column caption='Jumlah puskesmas' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='1'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Jumlah rumah sakit khusus' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+        <calculation class='tableau' formula='2' />
+      </column>
+      <column caption='jumlah RSUD' datatype='integer' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='3'>
+        <calculation class='tableau' formula='3' />
+      </column>
+      <column caption='Persentasi kemiskinan (maret)' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='4.'>
+        <calculation class='tableau' formula='4.' />
+      </column>
+      <column caption='Persentasi kemiskinan (september)' datatype='real' datatype-customized='true' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='5.'>
+        <calculation class='tableau' formula='5.' />
+      </column>
+      <column caption='Jumlah penduduk dengan asuransi' datatype='integer' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='6'>
+        <calculation class='tableau' formula='6' />
+      </column>
+      <column caption='Suhu rata-rata' datatype='real' name='[Parameter 7]' param-domain-type='any' role='measure' type='quantitative' value='8.'>
+        <calculation class='tableau' formula='8.' />
+      </column>
+      <column caption='jumlah penduduk' datatype='real' name='[Parameter 8]' param-domain-type='any' role='measure' type='quantitative' value='10.'>
+        <calculation class='tableau' formula='10.' />
+      </column>
+      <column caption='Kepadatan Penduduk (jika/Km2)' datatype='integer' datatype-customized='true' name='[Parameter 9]' param-domain-type='any' role='measure' type='quantitative' value='12'>
+        <calculation class='tableau' formula='12' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (MPPT)' inline='true' name='federated.0l41oz71nhkqs7173qw921kh74bl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='MPPT' name='excel-direct.1bt2n9k1s3snfg1cmo2qh1v7sh7d'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/MPPT/dataset/MPPT.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1bt2n9k1s3snfg1cmo2qh1v7sh7d' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:X137:no:A1:X137:0' header='yes' outcome='2'>
+            <column datatype='string' name='Negara' ordinal='0' />
+            <column datatype='string' name='Provinsi' ordinal='1' />
+            <column datatype='real' name='Lat' ordinal='2' />
+            <column datatype='real' name='Lon' ordinal='3' />
+            <column datatype='date' date-parse-format='yyyy' name='Tahun' ordinal='4' />
+            <column datatype='real' name='Jumlah Puskesmas' ordinal='5' />
+            <column datatype='real' name='Jumlah Rumah Sakit Khusus' ordinal='6' />
+            <column datatype='real' name='Jumlah Rumah Sakit Umum' ordinal='7' />
+            <column datatype='real' name='Persentase kemiskinan (sem.1 (maret))' ordinal='8' />
+            <column datatype='real' name='Persentase kemiskinan (sem.2 (september))' ordinal='9' />
+            <column datatype='real' name='Jumlah kemiskinan (sem.2 (september))' ordinal='10' />
+            <column datatype='real' name='Jumlah Penduduk Yang Dicakup Asuransi Kesehatan Atau Sistem Kesehatan Masyarakat (Orang)' ordinal='11' />
+            <column datatype='real' name='Suhu Minimum' ordinal='12' />
+            <column datatype='real' name='Suhu Rata-rata' ordinal='13' />
+            <column datatype='real' name='Suhu Maksimum' ordinal='14' />
+            <column datatype='real' name='jumlah penduduk' ordinal='15' />
+            <column datatype='real' name='Jumlah Penduduk (ribu jiwa)' ordinal='16' />
+            <column datatype='real' name='Luas Wilayah' ordinal='17' />
+            <column datatype='integer' name='Kepadatan penduduk (jiwa/km2)' ordinal='18' />
+            <column datatype='real' name='Persentase Rumah Tangga menurut Provinsi dan Memiliki Akses terhadap Sanitasi Layak (Persen)' ordinal='19' />
+            <column datatype='real' name='Jumlah Curah Hujan (mm)' ordinal='20' />
+            <column datatype='real' name='Jumlah Hari Hujan (hari)' ordinal='21' />
+            <column datatype='real' name='Annual Parasite Incidence (API)' ordinal='22' />
+            <column datatype='integer' name='Status Endemisitas (0=Eliminasi, 1=Rendah, 2=Sedang, 3=Tinggi)' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1bt2n9k1s3snfg1cmo2qh1v7sh7d' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:X137:no:A1:X137:0' header='yes' outcome='2'>
+            <column datatype='string' name='Negara' ordinal='0' />
+            <column datatype='string' name='Provinsi' ordinal='1' />
+            <column datatype='real' name='Lat' ordinal='2' />
+            <column datatype='real' name='Lon' ordinal='3' />
+            <column datatype='date' date-parse-format='yyyy' name='Tahun' ordinal='4' />
+            <column datatype='real' name='Jumlah Puskesmas' ordinal='5' />
+            <column datatype='real' name='Jumlah Rumah Sakit Khusus' ordinal='6' />
+            <column datatype='real' name='Jumlah Rumah Sakit Umum' ordinal='7' />
+            <column datatype='real' name='Persentase kemiskinan (sem.1 (maret))' ordinal='8' />
+            <column datatype='real' name='Persentase kemiskinan (sem.2 (september))' ordinal='9' />
+            <column datatype='real' name='Jumlah kemiskinan (sem.2 (september))' ordinal='10' />
+            <column datatype='real' name='Jumlah Penduduk Yang Dicakup Asuransi Kesehatan Atau Sistem Kesehatan Masyarakat (Orang)' ordinal='11' />
+            <column datatype='real' name='Suhu Minimum' ordinal='12' />
+            <column datatype='real' name='Suhu Rata-rata' ordinal='13' />
+            <column datatype='real' name='Suhu Maksimum' ordinal='14' />
+            <column datatype='real' name='jumlah penduduk' ordinal='15' />
+            <column datatype='real' name='Jumlah Penduduk (ribu jiwa)' ordinal='16' />
+            <column datatype='real' name='Luas Wilayah' ordinal='17' />
+            <column datatype='integer' name='Kepadatan penduduk (jiwa/km2)' ordinal='18' />
+            <column datatype='real' name='Persentase Rumah Tangga menurut Provinsi dan Memiliki Akses terhadap Sanitasi Layak (Persen)' ordinal='19' />
+            <column datatype='real' name='Jumlah Curah Hujan (mm)' ordinal='20' />
+            <column datatype='real' name='Jumlah Hari Hujan (hari)' ordinal='21' />
+            <column datatype='real' name='Annual Parasite Incidence (API)' ordinal='22' />
+            <column datatype='integer' name='Status Endemisitas (0=Eliminasi, 1=Rendah, 2=Sedang, 3=Tinggi)' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:X137:no:A1:X137:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Negara</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Negara]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Negara</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Provinsi</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Provinsi]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Provinsi</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lon]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Lon</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tahun</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Tahun]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Tahun</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Puskesmas</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Puskesmas]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Puskesmas</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Rumah Sakit Khusus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Rumah Sakit Khusus]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Rumah Sakit Khusus</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Rumah Sakit Umum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Rumah Sakit Umum]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Rumah Sakit Umum</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Persentase kemiskinan (sem.1 (maret))</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Persentase kemiskinan (sem.1 (maret))]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Persentase kemiskinan (sem.1 (maret))</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Persentase kemiskinan (sem.2 (september))</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Persentase kemiskinan (sem.2 (september))]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Persentase kemiskinan (sem.2 (september))</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah kemiskinan (sem.2 (september))</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah kemiskinan (sem.2 (september))]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah kemiskinan (sem.2 (september))</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Penduduk Yang Dicakup Asuransi Kesehatan Atau Sistem Kesehatan Masyarakat (Orang)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Penduduk Yang Dicakup Asuransi Kesehatan Atau Sistem Kesehatan Masyarakat (Orang)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Penduduk Yang Dicakup Asuransi Kesehatan Atau Sistem Kesehatan Masyarakat (Orang)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suhu Minimum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Suhu Minimum]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Suhu Minimum</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suhu Rata-rata</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Suhu Rata-rata]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Suhu Rata-rata</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suhu Maksimum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Suhu Maksimum]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Suhu Maksimum</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jumlah penduduk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[jumlah penduduk]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>jumlah penduduk</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Penduduk (ribu jiwa)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Penduduk (ribu jiwa)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Penduduk (ribu jiwa)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Luas Wilayah</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Luas Wilayah]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Luas Wilayah</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kepadatan penduduk (jiwa/km2)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kepadatan penduduk (jiwa/km2)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Kepadatan penduduk (jiwa/km2)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Persentase Rumah Tangga menurut Provinsi dan Memiliki Akses terhadap Sanitasi Layak (Persen)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Persentase Rumah Tangga menurut Provinsi dan Memiliki Akses terhadap Sanitasi Layak (Persen)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Persentase Rumah Tangga menurut Provinsi dan Memiliki Akses terhadap Sanitasi Layak (Persen)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Curah Hujan (mm)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Curah Hujan (mm)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Curah Hujan (mm)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Jumlah Hari Hujan (hari)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Jumlah Hari Hujan (hari)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Jumlah Hari Hujan (hari)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Parasite Incidence (API)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Parasite Incidence (API)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Annual Parasite Incidence (API)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status Endemisitas (0=Eliminasi, 1=Rendah, 2=Sedang, 3=Tinggi)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Status Endemisitas (0=Eliminasi, 1=Rendah, 2=Sedang, 3=Tinggi)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Status Endemisitas (0=Eliminasi, 1=Rendah, 2=Sedang, 3=Tinggi)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_80D3ED8CC1B548D1862C220D55E98102]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Annual Parasite Incidence (API)]' role='measure' type='quantitative' />
+      <column caption='prediksi api' datatype='real' name='[Calculation_617837575935762432]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='FLOAT(SCRIPT_STR(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.preprocessing import MinMaxScaler&#13;&#10;&#13;&#10;return tabpy.query(&apos;prediksi_api&apos;, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9, _arg10, _arg11, _arg12, _arg13, _arg14, _arg15)[&apos;response&apos;]&#13;&#10;&quot;,&#13;&#10;[Parameters].[Parameter 1],&#13;&#10;[Parameters].[Parameter 2],&#13;&#10;[Parameters].[Parameter 3],&#13;&#10;[Parameters].[Parameter 4],&#13;&#10;[Parameters].[Parameter 5],&#13;&#10;[Parameters].[Parameter 6],&#13;&#10;[Parameters].[Parameter 12],&#13;&#10;[Parameters].[Parameter 7],&#13;&#10;[Parameters].[Parameter 13],&#13;&#10;[Parameters].[Parameter 8],&#13;&#10;[Parameters].[Parameter 15],&#13;&#10;[Parameters].[Parameter 9],&#13;&#10;[Parameters].[Parameter 10],&#13;&#10;[Parameters].[Parameter 11],&#13;&#10;[Parameters].[Parameter 14]&#13;&#10;))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Prediksi Status Endemisitas' datatype='string' name='[Calculation_835417732848517120]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='SCRIPT_STR(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.preprocessing import MinMaxScaler&#13;&#10;&#13;&#10;return tabpy.query(&apos;prediksi_endemisitas&apos;, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9, _arg10, _arg11, _arg12, _arg13, _arg14, _arg15)[&apos;response&apos;]&#13;&#10;&quot;,&#13;&#10;[Parameters].[Parameter 1],&#13;&#10;[Parameters].[Parameter 2],&#13;&#10;[Parameters].[Parameter 3],&#13;&#10;[Parameters].[Parameter 4],&#13;&#10;[Parameters].[Parameter 5],&#13;&#10;[Parameters].[Parameter 6],&#13;&#10;[Parameters].[Parameter 12],&#13;&#10;[Parameters].[Parameter 7],&#13;&#10;[Parameters].[Parameter 13],&#13;&#10;[Parameters].[Parameter 8],&#13;&#10;[Parameters].[Parameter 15],&#13;&#10;[Parameters].[Parameter 9],&#13;&#10;[Parameters].[Parameter 10],&#13;&#10;[Parameters].[Parameter 11],&#13;&#10;[Parameters].[Parameter 14]&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' name='[Jumlah Curah Hujan (mm)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Jumlah Rumah Sakit Umum]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Kepadatan penduduk (jiwa/km2)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Negara]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Provinsi]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='real' name='[Suhu Rata-rata]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_80D3ED8CC1B548D1862C220D55E98102]' role='measure' type='quantitative' />
+      <column caption='Jumlah Penduduk' datatype='real' name='[jumlah penduduk]' role='measure' type='quantitative' />
+      <column-instance column='[Lat]' derivation='Attribute' name='[attr:Lat:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Annual Parasite Incidence (API)]' derivation='Avg' name='[avg:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Jumlah Curah Hujan (mm)]' derivation='Avg' name='[avg:Jumlah Curah Hujan (mm):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lat]' derivation='Avg' name='[avg:Lat:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lon]' derivation='Avg' name='[avg:Lon:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Suhu Rata-rata]' derivation='Avg' name='[avg:Suhu Rata-rata:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lat]' derivation='None' name='[none:Lat:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Lat]' derivation='None' name='[none:Lat:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Lon]' derivation='None' name='[none:Lon:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Lon]' derivation='None' name='[none:Lon:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Annual Parasite Incidence (API)]' derivation='Sum' name='[sum:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Jumlah Curah Hujan (mm)]' derivation='Sum' name='[sum:Jumlah Curah Hujan (mm):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Jumlah Rumah Sakit Umum]' derivation='Sum' name='[sum:Jumlah Rumah Sakit Umum:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Kepadatan penduduk (jiwa/km2)]' derivation='Sum' name='[sum:Kepadatan penduduk (jiwa/km2):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Suhu Rata-rata]' derivation='Sum' name='[sum:Suhu Rata-rata:qk]' pivot='key' type='quantitative' />
+      <group caption='Tooltip (Lat,Lon)' hidden='true' name='[Tooltip (Lat,Lon)]' name-style='unqualified' user:auto-column='sheet_link' user:ui-vit-column='true'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Lat:ok]' />
+          <groupfilter function='level-members' level='[none:Lon:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.598326' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.401674' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[attr:Lat:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Lat:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[none:Lat:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Jumlah Curah Hujan (mm):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Jumlah Curah Hujan (mm):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Suhu Rata-rata:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Suhu Rata-rata:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Lon:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[none:Lon:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Jumlah Rumah Sakit Umum:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Kepadatan penduduk (jiwa/km2):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Persentasi akses sanitasi' datatype='real' name='[Parameter 10]' param-domain-type='any' role='measure' type='quantitative' value='13.'>
+          <calculation class='tableau' formula='13.' />
+        </column>
+        <column caption='Curah Hujan' datatype='real' name='[Parameter 11]' param-domain-type='any' role='measure' type='quantitative' value='14.'>
+          <calculation class='tableau' formula='14.' />
+        </column>
+        <column caption='Suhu Minimum' datatype='real' name='[Parameter 12]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+          <calculation class='tableau' formula='7.' />
+        </column>
+        <column caption='Suhu Maksimum' datatype='real' name='[Parameter 13]' param-domain-type='any' role='measure' type='quantitative' value='9.'>
+          <calculation class='tableau' formula='9.' />
+        </column>
+        <column caption='Total Hari Hujan' datatype='real' name='[Parameter 14]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+          <calculation class='tableau' formula='15.' />
+        </column>
+        <column caption='Luas Wilayah' datatype='real' name='[Parameter 15]' param-domain-type='any' role='measure' type='quantitative' value='11.'>
+          <calculation class='tableau' formula='11.' />
+        </column>
+        <column caption='Jumlah puskesmas' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='1'>
+          <calculation class='tableau' formula='1' />
+        </column>
+        <column caption='Jumlah rumah sakit khusus' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+          <calculation class='tableau' formula='2' />
+        </column>
+        <column caption='jumlah RSUD' datatype='integer' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='3'>
+          <calculation class='tableau' formula='3' />
+        </column>
+        <column caption='Persentasi kemiskinan (maret)' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='4.'>
+          <calculation class='tableau' formula='4.' />
+        </column>
+        <column caption='Persentasi kemiskinan (september)' datatype='real' datatype-customized='true' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='5.'>
+          <calculation class='tableau' formula='5.' />
+        </column>
+        <column caption='Jumlah penduduk dengan asuransi' datatype='integer' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='6'>
+          <calculation class='tableau' formula='6' />
+        </column>
+        <column caption='Suhu rata-rata' datatype='real' name='[Parameter 7]' param-domain-type='any' role='measure' type='quantitative' value='8.'>
+          <calculation class='tableau' formula='8.' />
+        </column>
+        <column caption='jumlah penduduk' datatype='real' name='[Parameter 8]' param-domain-type='any' role='measure' type='quantitative' value='10.'>
+          <calculation class='tableau' formula='10.' />
+        </column>
+        <column caption='Kepadatan Penduduk (jika/Km2)' datatype='integer' datatype-customized='true' name='[Parameter 9]' param-domain-type='any' role='measure' type='quantitative' value='12'>
+          <calculation class='tableau' formula='12' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_80D3ED8CC1B548D1862C220D55E98102'>
+            <properties context=''>
+              <relation connection='excel-direct.1bt2n9k1s3snfg1cmo2qh1v7sh7d' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:X137:no:A1:X137:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Negara' ordinal='0' />
+                  <column datatype='string' name='Provinsi' ordinal='1' />
+                  <column datatype='real' name='Lat' ordinal='2' />
+                  <column datatype='real' name='Lon' ordinal='3' />
+                  <column datatype='date' date-parse-format='yyyy' name='Tahun' ordinal='4' />
+                  <column datatype='real' name='Jumlah Puskesmas' ordinal='5' />
+                  <column datatype='real' name='Jumlah Rumah Sakit Khusus' ordinal='6' />
+                  <column datatype='real' name='Jumlah Rumah Sakit Umum' ordinal='7' />
+                  <column datatype='real' name='Persentase kemiskinan (sem.1 (maret))' ordinal='8' />
+                  <column datatype='real' name='Persentase kemiskinan (sem.2 (september))' ordinal='9' />
+                  <column datatype='real' name='Jumlah kemiskinan (sem.2 (september))' ordinal='10' />
+                  <column datatype='real' name='Jumlah Penduduk Yang Dicakup Asuransi Kesehatan Atau Sistem Kesehatan Masyarakat (Orang)' ordinal='11' />
+                  <column datatype='real' name='Suhu Minimum' ordinal='12' />
+                  <column datatype='real' name='Suhu Rata-rata' ordinal='13' />
+                  <column datatype='real' name='Suhu Maksimum' ordinal='14' />
+                  <column datatype='real' name='jumlah penduduk' ordinal='15' />
+                  <column datatype='real' name='Jumlah Penduduk (ribu jiwa)' ordinal='16' />
+                  <column datatype='real' name='Luas Wilayah' ordinal='17' />
+                  <column datatype='integer' name='Kepadatan penduduk (jiwa/km2)' ordinal='18' />
+                  <column datatype='real' name='Persentase Rumah Tangga menurut Provinsi dan Memiliki Akses terhadap Sanitasi Layak (Persen)' ordinal='19' />
+                  <column datatype='real' name='Jumlah Curah Hujan (mm)' ordinal='20' />
+                  <column datatype='real' name='Jumlah Hari Hujan (hari)' ordinal='21' />
+                  <column datatype='real' name='Annual Parasite Incidence (API)' ordinal='22' />
+                  <column datatype='integer' name='Status Endemisitas (0=Eliminasi, 1=Rendah, 2=Sedang, 3=Tinggi)' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='8'>Pengaruh Jumlah RSUD Terhadap</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='8'>Annual Peracite Incidance</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='8'>Di Indonesia 2012 - 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MPPT)' name='federated.0l41oz71nhkqs7173qw921kh74bl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0l41oz71nhkqs7173qw921kh74bl'>
+            <column datatype='real' name='[Annual Parasite Incidence (API)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Jumlah Rumah Sakit Umum]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Tahun]' role='dimension' type='ordinal' />
+            <column-instance column='[Annual Parasite Incidence (API)]' derivation='Avg' name='[avg:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual Parasite Incidence (API)]' derivation='Sum' name='[sum:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Jumlah Rumah Sakit Umum]' derivation='Sum' name='[sum:Jumlah Rumah Sakit Umum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tahun]' derivation='Year-Trunc' name='[tyr:Tahun:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Jumlah Rumah Sakit Umum:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e9d2d2</color>
+                <color>#e2b5b5</color>
+                <color>#db9999</color>
+                <color>#d47f7f</color>
+                <color>#cd6666</color>
+                <color>#c64f4f</color>
+                <color>#bf3939</color>
+                <color>#b82424</color>
+                <color>#b11111</color>
+                <color>#aa0000</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e9d2d2</color>
+                <color>#e2b5b5</color>
+                <color>#db9999</color>
+                <color>#d47f7f</color>
+                <color>#cd6666</color>
+                <color>#c64f4f</color>
+                <color>#bf3939</color>
+                <color>#b82424</color>
+                <color>#b11111</color>
+                <color>#aa0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[:Measure Names]' value='&#10;&#10;'>
+              <formatted-text>
+                <run>Æ&#10;&#10;</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Jumlah Rumah Sakit Umum:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0l41oz71nhkqs7173qw921kh74bl].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+              <text column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+                <format attr='font-family' value='Tableau Semibold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk] + [federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Jumlah Rumah Sakit Umum:qk])</rows>
+        <cols>[federated.0l41oz71nhkqs7173qw921kh74bl].[tyr:Tahun:qk]</cols>
+      </table>
+      <simple-id uuid='{0BD80BCD-C621-430F-9313-23341CC061F5}' />
+    </worksheet>
+    <worksheet name='Pengaruh Kepadatan Penduduk  TerhadapAnnual Paracite Incidance (APIDi Indonesia 2012 - 2015'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='8'>Pengaruh Kepadatan Penduduk  Terhadap</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='8'>Annual Paracite Incidance (API</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='8'>Di Indonesia 2012 - 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MPPT)' name='federated.0l41oz71nhkqs7173qw921kh74bl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0l41oz71nhkqs7173qw921kh74bl'>
+            <column datatype='real' name='[Annual Parasite Incidence (API)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Kepadatan penduduk (jiwa/km2)]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Tahun]' role='dimension' type='ordinal' />
+            <column-instance column='[Annual Parasite Incidence (API)]' derivation='Sum' name='[sum:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Kepadatan penduduk (jiwa/km2)]' derivation='Sum' name='[sum:Kepadatan penduduk (jiwa/km2):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tahun]' derivation='Year-Trunc' name='[tyr:Tahun:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Kepadatan penduduk (jiwa/km2):qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e9d2d2</color>
+                <color>#e2b5b5</color>
+                <color>#db9999</color>
+                <color>#d47f7f</color>
+                <color>#cd6666</color>
+                <color>#c64f4f</color>
+                <color>#bf3939</color>
+                <color>#b82424</color>
+                <color>#b11111</color>
+                <color>#aa0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Kepadatan penduduk (jiwa/km2):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+              <text column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='12' />
+                <format attr='font-family' value='Tableau Semibold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk] + [federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Kepadatan penduduk (jiwa/km2):qk])</rows>
+        <cols>[federated.0l41oz71nhkqs7173qw921kh74bl].[tyr:Tahun:qk]</cols>
+      </table>
+      <simple-id uuid='{07FC2D6D-C3F0-48CD-BABC-41B5F26E3260}' />
+    </worksheet>
+    <worksheet name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>Peta Penyebaran malaria berdasarkan</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>Anual Parasite Incidence (API) Di Indonesia</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>2012 - 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MPPT)' name='federated.0l41oz71nhkqs7173qw921kh74bl' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0l41oz71nhkqs7173qw921kh74bl'>
+            <column datatype='real' name='[Annual Parasite Incidence (API)]' role='measure' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[Provinsi]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Provinsi]' derivation='Attribute' name='[attr:Provinsi:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Lat]' derivation='None' name='[none:Lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lon]' derivation='None' name='[none:Lon:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual Parasite Incidence (API)]' derivation='Sum' name='[sum:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' num-steps='4' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+              <size column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+              <tooltip column='[federated.0l41oz71nhkqs7173qw921kh74bl].[attr:Provinsi:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Provinsi: </run>
+                <run bold='true'><![CDATA[<[federated.0l41oz71nhkqs7173qw921kh74bl].[attr:Provinsi:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Annual Parasite Incidence (API):	</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+                <format attr='size' value='2' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0l41oz71nhkqs7173qw921kh74bl].[none:Lat:qk]</rows>
+        <cols>[federated.0l41oz71nhkqs7173qw921kh74bl].[none:Lon:qk]</cols>
+      </table>
+      <simple-id uuid='{8ABD47EA-BC44-49AE-9A2D-90A9918DA599}' />
+    </worksheet>
+    <worksheet name='Prediksi Endemisitas'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MPPT)' name='federated.0l41oz71nhkqs7173qw921kh74bl' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Persentasi akses sanitasi' datatype='real' name='[Parameter 10]' param-domain-type='any' role='measure' type='quantitative' value='13.'>
+              <calculation class='tableau' formula='13.' />
+            </column>
+            <column caption='Curah Hujan' datatype='real' name='[Parameter 11]' param-domain-type='any' role='measure' type='quantitative' value='14.'>
+              <calculation class='tableau' formula='14.' />
+            </column>
+            <column caption='Suhu Minimum' datatype='real' name='[Parameter 12]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+              <calculation class='tableau' formula='7.' />
+            </column>
+            <column caption='Suhu Maksimum' datatype='real' name='[Parameter 13]' param-domain-type='any' role='measure' type='quantitative' value='9.'>
+              <calculation class='tableau' formula='9.' />
+            </column>
+            <column caption='Total Hari Hujan' datatype='real' name='[Parameter 14]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+              <calculation class='tableau' formula='15.' />
+            </column>
+            <column caption='Luas Wilayah' datatype='real' name='[Parameter 15]' param-domain-type='any' role='measure' type='quantitative' value='11.'>
+              <calculation class='tableau' formula='11.' />
+            </column>
+            <column caption='Jumlah puskesmas' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='1'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Jumlah rumah sakit khusus' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+              <calculation class='tableau' formula='2' />
+            </column>
+            <column caption='jumlah RSUD' datatype='integer' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='3'>
+              <calculation class='tableau' formula='3' />
+            </column>
+            <column caption='Persentasi kemiskinan (maret)' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='4.'>
+              <calculation class='tableau' formula='4.' />
+            </column>
+            <column caption='Persentasi kemiskinan (september)' datatype='real' datatype-customized='true' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='5.'>
+              <calculation class='tableau' formula='5.' />
+            </column>
+            <column caption='Jumlah penduduk dengan asuransi' datatype='integer' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='6'>
+              <calculation class='tableau' formula='6' />
+            </column>
+            <column caption='Suhu rata-rata' datatype='real' name='[Parameter 7]' param-domain-type='any' role='measure' type='quantitative' value='8.'>
+              <calculation class='tableau' formula='8.' />
+            </column>
+            <column caption='jumlah penduduk' datatype='real' name='[Parameter 8]' param-domain-type='any' role='measure' type='quantitative' value='10.'>
+              <calculation class='tableau' formula='10.' />
+            </column>
+            <column caption='Kepadatan Penduduk (jika/Km2)' datatype='integer' datatype-customized='true' name='[Parameter 9]' param-domain-type='any' role='measure' type='quantitative' value='12'>
+              <calculation class='tableau' formula='12' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0l41oz71nhkqs7173qw921kh74bl'>
+            <column caption='Prediksi Status Endemisitas' datatype='string' name='[Calculation_835417732848517120]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='SCRIPT_STR(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.preprocessing import MinMaxScaler&#13;&#10;&#13;&#10;return tabpy.query(&apos;prediksi_endemisitas&apos;, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9, _arg10, _arg11, _arg12, _arg13, _arg14, _arg15)[&apos;response&apos;]&#13;&#10;&quot;,&#13;&#10;[Parameters].[Parameter 1],&#13;&#10;[Parameters].[Parameter 2],&#13;&#10;[Parameters].[Parameter 3],&#13;&#10;[Parameters].[Parameter 4],&#13;&#10;[Parameters].[Parameter 5],&#13;&#10;[Parameters].[Parameter 6],&#13;&#10;[Parameters].[Parameter 12],&#13;&#10;[Parameters].[Parameter 7],&#13;&#10;[Parameters].[Parameter 13],&#13;&#10;[Parameters].[Parameter 8],&#13;&#10;[Parameters].[Parameter 15],&#13;&#10;[Parameters].[Parameter 9],&#13;&#10;[Parameters].[Parameter 10],&#13;&#10;[Parameters].[Parameter 11],&#13;&#10;[Parameters].[Parameter 14]&#13;&#10;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[Calculation_835417732848517120]' derivation='User' name='[usr:Calculation_835417732848517120:nk]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]' value='796' />
+            <format attr='width' value='419' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]' value='480' />
+            <format attr='width' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]' value='532' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]</cols>
+      </table>
+      <simple-id uuid='{30FC2D70-6210-4A97-9DFC-444E936E76D2}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MPPT)' name='federated.0l41oz71nhkqs7173qw921kh74bl' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Persentasi akses sanitasi' datatype='real' name='[Parameter 10]' param-domain-type='any' role='measure' type='quantitative' value='13.'>
+              <calculation class='tableau' formula='13.' />
+            </column>
+            <column caption='Curah Hujan' datatype='real' name='[Parameter 11]' param-domain-type='any' role='measure' type='quantitative' value='14.'>
+              <calculation class='tableau' formula='14.' />
+            </column>
+            <column caption='Suhu Minimum' datatype='real' name='[Parameter 12]' param-domain-type='any' role='measure' type='quantitative' value='7.'>
+              <calculation class='tableau' formula='7.' />
+            </column>
+            <column caption='Suhu Maksimum' datatype='real' name='[Parameter 13]' param-domain-type='any' role='measure' type='quantitative' value='9.'>
+              <calculation class='tableau' formula='9.' />
+            </column>
+            <column caption='Total Hari Hujan' datatype='real' name='[Parameter 14]' param-domain-type='any' role='measure' type='quantitative' value='15.'>
+              <calculation class='tableau' formula='15.' />
+            </column>
+            <column caption='Luas Wilayah' datatype='real' name='[Parameter 15]' param-domain-type='any' role='measure' type='quantitative' value='11.'>
+              <calculation class='tableau' formula='11.' />
+            </column>
+            <column caption='Jumlah puskesmas' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='1'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Jumlah rumah sakit khusus' datatype='integer' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='2'>
+              <calculation class='tableau' formula='2' />
+            </column>
+            <column caption='jumlah RSUD' datatype='integer' name='[Parameter 3]' param-domain-type='any' role='measure' type='quantitative' value='3'>
+              <calculation class='tableau' formula='3' />
+            </column>
+            <column caption='Persentasi kemiskinan (maret)' datatype='real' name='[Parameter 4]' param-domain-type='any' role='measure' type='quantitative' value='4.'>
+              <calculation class='tableau' formula='4.' />
+            </column>
+            <column caption='Persentasi kemiskinan (september)' datatype='real' datatype-customized='true' name='[Parameter 5]' param-domain-type='any' role='measure' type='quantitative' value='5.'>
+              <calculation class='tableau' formula='5.' />
+            </column>
+            <column caption='Jumlah penduduk dengan asuransi' datatype='integer' name='[Parameter 6]' param-domain-type='any' role='measure' type='quantitative' value='6'>
+              <calculation class='tableau' formula='6' />
+            </column>
+            <column caption='Suhu rata-rata' datatype='real' name='[Parameter 7]' param-domain-type='any' role='measure' type='quantitative' value='8.'>
+              <calculation class='tableau' formula='8.' />
+            </column>
+            <column caption='jumlah penduduk' datatype='real' name='[Parameter 8]' param-domain-type='any' role='measure' type='quantitative' value='10.'>
+              <calculation class='tableau' formula='10.' />
+            </column>
+            <column caption='Kepadatan Penduduk (jika/Km2)' datatype='integer' datatype-customized='true' name='[Parameter 9]' param-domain-type='any' role='measure' type='quantitative' value='12'>
+              <calculation class='tableau' formula='12' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0l41oz71nhkqs7173qw921kh74bl'>
+            <column caption='prediksi api' datatype='real' name='[Calculation_617837575935762432]' role='measure' type='ordinal'>
+              <calculation class='tableau' formula='FLOAT(SCRIPT_STR(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.preprocessing import MinMaxScaler&#13;&#10;&#13;&#10;return tabpy.query(&apos;prediksi_api&apos;, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9, _arg10, _arg11, _arg12, _arg13, _arg14, _arg15)[&apos;response&apos;]&#13;&#10;&quot;,&#13;&#10;[Parameters].[Parameter 1],&#13;&#10;[Parameters].[Parameter 2],&#13;&#10;[Parameters].[Parameter 3],&#13;&#10;[Parameters].[Parameter 4],&#13;&#10;[Parameters].[Parameter 5],&#13;&#10;[Parameters].[Parameter 6],&#13;&#10;[Parameters].[Parameter 12],&#13;&#10;[Parameters].[Parameter 7],&#13;&#10;[Parameters].[Parameter 13],&#13;&#10;[Parameters].[Parameter 8],&#13;&#10;[Parameters].[Parameter 15],&#13;&#10;[Parameters].[Parameter 9],&#13;&#10;[Parameters].[Parameter 10],&#13;&#10;[Parameters].[Parameter 11],&#13;&#10;[Parameters].[Parameter 14]&#13;&#10;))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[Calculation_617837575935762432]' derivation='User' name='[usr:Calculation_617837575935762432:ok]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_617837575935762432:ok]' value='448' />
+            <format attr='width' value='587' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_617837575935762432:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{2CEC4481-BC57-40DB-901A-86495CF50038}' />
+    </worksheet>
+    <worksheet name='pengaruh suhu dan cuaca'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='8'>Pengaruh Curah hujan &amp; suhu Rata- Rata </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='8'>terhadap Annual Paracite Incidence (API)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='8'>Di Indonesia 2012 - 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (MPPT)' name='federated.0l41oz71nhkqs7173qw921kh74bl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0l41oz71nhkqs7173qw921kh74bl'>
+            <column datatype='real' name='[Annual Parasite Incidence (API)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Jumlah Curah Hujan (mm)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Suhu Rata-rata]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Tahun]' role='dimension' type='ordinal' />
+            <column-instance column='[Annual Parasite Incidence (API)]' derivation='Avg' name='[avg:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Jumlah Curah Hujan (mm)]' derivation='Avg' name='[avg:Jumlah Curah Hujan (mm):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Suhu Rata-rata]' derivation='Avg' name='[avg:Suhu Rata-rata:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Annual Parasite Incidence (API)]' derivation='Sum' name='[sum:Annual Parasite Incidence (API):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Tahun]' derivation='Year-Trunc' name='[tyr:Tahun:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Jumlah Curah Hujan (mm):qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='width' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk]' value='103' />
+            <format attr='width' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Jumlah Curah Hujan (mm):qk]' value='103' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#e9d2d2</color>
+                <color>#e2b5b5</color>
+                <color>#db9999</color>
+                <color>#d47f7f</color>
+                <color>#cd6666</color>
+                <color>#c64f4f</color>
+                <color>#bf3939</color>
+                <color>#b82424</color>
+                <color>#b11111</color>
+                <color>#aa0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Jumlah Curah Hujan (mm):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+              <tooltip column='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Suhu Rata-rata:qk]' />
+              <lod column='[federated.0l41oz71nhkqs7173qw921kh74bl].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' />
+              <text column='[federated.0l41oz71nhkqs7173qw921kh74bl].[tyr:Tahun:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Tableau Semibold' />
+                <format attr='font-weight' value='normal' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Annual Parasite Incidence (API):qk] + [federated.0l41oz71nhkqs7173qw921kh74bl].[avg:Jumlah Curah Hujan (mm):qk])</rows>
+        <cols>[federated.0l41oz71nhkqs7173qw921kh74bl].[tyr:Tahun:qk]</cols>
+      </table>
+      <simple-id uuid='{2E2260E7-E62A-495D-8B2B-E83002319248}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98188' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='906'>
+            <zone h='98188' id='5' type-v2='layout-basic' w='89378' x='483' y='906'>
+              <zone h='98188' id='3' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' w='44681' x='483' y='906'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49094' id='10' name='pengaruh suhu dan cuaca' w='44697' x='45164' y='906'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49094' id='11' name='Pengaruh Kepadatan Penduduk  TerhadapAnnual Paracite Incidance (APIDi Indonesia 2012 - 2015' w='22344' x='45164' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49094' id='12' name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015' w='22353' x='67508' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98188' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='906'>
+              <zone h='8154' id='13' name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015' pane-specification-id='1' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[:Measure Names]' type-v2='color' w='9656' x='89861' y='906'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='9966' id='8' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type-v2='color' w='8449' x='33736' y='16648' />
+        <zone h='18233' id='9' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type-v2='size' w='8449' x='33917' y='24689' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='35' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98188' id='34' param='vert' type-v2='layout-flow' w='99034' x='483' y='906'>
+                <zone fixed-size='280' h='98188' id='3' is-fixed='true' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' w='44681' x='483' y='906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9966' id='8' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type-v2='color' w='8449' x='33736' y='16648'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='18233' id='9' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type-v2='size' w='8449' x='33917' y='24689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49094' id='10' is-fixed='true' name='pengaruh suhu dan cuaca' w='44697' x='45164' y='906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49094' id='11' is-fixed='true' name='Pengaruh Kepadatan Penduduk  TerhadapAnnual Paracite Incidance (APIDi Indonesia 2012 - 2015' w='22344' x='45164' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49094' id='12' is-fixed='true' name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015' w='22353' x='67508' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8154' id='13' name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015' pane-specification-id='1' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[:Measure Names]' type-v2='color' w='9656' x='89861' y='906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{296AFD02-267C-41EB-8107-90E332D0CBDA}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5FFD985F-B101-40F4-B737-0DC14BC7D5F3}' />
+    </window>
+    <window class='worksheet' name='pengaruh suhu dan cuaca'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DABE0AE2-7342-482F-BACF-A6F1DB5B3B74}' />
+    </window>
+    <window class='worksheet' name='Pengaruh Kepadatan Penduduk  TerhadapAnnual Paracite Incidance (APIDi Indonesia 2012 - 2015'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card pane-specification-id='4' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FF39459-5610-4ADE-AF02-09974B78017E}' />
+    </window>
+    <window class='worksheet' name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card pane-specification-id='1' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[:Measure Names]' type='color' />
+            <card pane-specification-id='2' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[sum:Annual Parasite Incidence (API):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D58B1FDF-43AC-40E8-A1E9-E1DFF3438673}' />
+    </window>
+    <window class='worksheet' name='Prediksi Endemisitas'>
+      <cards>
+        <edge name='left'>
+          <strip size='228'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='19'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='type_in' param='[Parameters].[Parameter 15]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 9]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 10]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 11]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 14]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]' type='color' />
+          </strip>
+          <strip size='300'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 4]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 5]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 6]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 12]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 7]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 13]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 8]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0l41oz71nhkqs7173qw921kh74bl].[none:Provinsi:nk]</field>
+            <field>[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_835417732848517120:nk]</field>
+            <field>[federated.0l41oz71nhkqs7173qw921kh74bl].[yr:Tahun:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{67D48530-823B-45AB-AEB1-5E30790CAE84}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='type_in' param='[Parameters].[Parameter 15]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 9]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 10]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 11]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 14]' type='parameter' />
+          </strip>
+          <strip size='300'>
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 4]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 5]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 6]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 12]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 7]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 13]' type='parameter' />
+            <card mode='type_in' param='[Parameters].[Parameter 8]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0l41oz71nhkqs7173qw921kh74bl].[usr:Calculation_617837575935762432:ok]</field>
+            <field>[federated.0l41oz71nhkqs7173qw921kh74bl].[yr:Tahun:ok]</field>
+            <field>[federated.0l41oz71nhkqs7173qw921kh74bl].[yr:Tahun:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6834191B-FC35-4366-93F1-9AFCC1441C6D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Pengaruh Jumlah RSUD TerhadapAnnual Peracite IncidanceDi Indonesia 2012 - 2015'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Pengaruh Kepadatan Penduduk  TerhadapAnnual Paracite Incidance (APIDi Indonesia 2012 - 2015'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='pengaruh suhu dan cuaca'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{C9CE8C63-6B0B-48FF-98D6-7812CFA9CF8E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      f/FPsbl2Hf8PS+JzBaLATP0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Peta Penyebaran malaria berdasarkanAnual Parasite Incidence (API) Di Indonesia2012 - 2015' width='192'>
+      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
+      ed+ixUPE/w/s4gQ9ghsA9gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Prediksi Endemisitas' width='192'>
+      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
+      B499xkJNJMt8AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='44' name='Sheet 6' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAsCAYAAAAzWrf+AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAEjUlEQVR4nO3cf0zUdRzH8acFTGPe8iey/JHmcC3n5u47BsXhONbVIKJB25VobpThMtJw
+      13BN8EeE08Iay8lSu8uY3oRMFBcmbGCjH56NnLWJMuXKVAo2KTS42z79AQ2/gIlDA/m8H9v9
+      8/m8P5/v57t9X/f9fO9uN0YppRBCU/cN9wKEGE4SAKE1CYDQmgRAaE0CILQmARBakwAIrUkA
+      hNYkAEJrEgChNQmA0JoEQGhNAiC0JgEQWpMACK1JAITWJABCaxIAoTUJgNCaBEBoTQIgtCYB
+      EFqTAAitSQCE1iQAQmsSAKE1CYDQWsitCnw+3/+xDiGGxRj5c1yhM9kCCa1JAITWJABCa3ck
+      AF0tPjyrnyE2w0PzYAcFr3H+q0JetBnk1/XpuvQNnrxMnnXYMAwDw7DhyMzDe6rdVNd+ykve
+      0gRiDQPD5iCzsIZLwd7+unyjZ3z/V+ym+v5raj/Cmtiemr6LEqOTGopOvzr67gsqLiZOxcVY
+      lXWxW1245aCAav3BrVYlx6i4uDhltVpVXq254sK+dWqdu06dvdrZc5wrqq7wOWWNWaHKLvfM
+      0uRWL8U4lKvCrzqVUp3+CuVyWJUjr1Zd/Y+j//WlS8VYE1Thd4G+Pao2L0E5tpSpXYutytp3
+      UWJUGtIdoPnAhxwYm8mn1R5emTPYUd+zq6iJ2PUHqS6wD1gxy7mRjctszLWEdTeETcWWvZxF
+      gRMc+7oVCFLv2cFPj2WyJmUGYUDYjBTyc+y0V37A3sabHfsKh/fXEJjpJC3a/Alw8OR2Co4u
+      ZFWWwf2DPRVxzxtSAGY532P7m08y+4HbuWQex7VnI05jKmG3MSrYdJZGLMx5eBJwkfPnAvBQ
+      JBE31IQnPo0dP/UnLg48x89leBtCsWctIcrU00xpkZfJK94gyXIbixL3vBH/EBy8donThwpZ
+      unIfY52bybICTGbKNKDld1pvLA55hKh58MtvlweYqYNq92f4Lak8nxhu6rlSvpkdfzjJyZh1
+      185DjEy3/CZ4uIWEhPPg7PksmH6EitoqGrKiibeEk/T+tyys2YrLYeNU23VCx0fwqM3G+DaY
+      MmlCv3kaS5by9nEbBcdy6d39BDm5NZmshsWUVy1DLn/9jPgAEGZh+vwU1u6JYIzjNdaXJFHj
+      sgIhRNrXstu+tre24whrFpUxfVqEeY6OKna6/VhSczG/+ddT4W0Fikk3is1jzuRgVM4ju7yU
+      ZZKMUWvkB+BfIZOZOgWu/91505L22mrqQ+2sX9Rni3N4PzWBmSxPi+5zwvFs8PnYYGprxpOR
+      TvHcInwb4u/c+sWIdNefAbo/i8/AM+gvCJopXf0q2w6d5tf2ru6mrhZ8nm14myaRlhTd3fbj
+      QUqOn6O7pIsW30dkb6on6vWVPGW6/hv5wttAqD2LJeYnXyGGcgfoeac8c2Nb71ZiXnY5pQPt
+      HeryMXIqTU2VOQbdLckU+dZhdz7BJ3veIXPLOdquA4xj4oIEXv54L+kLe5YcOYFrJbmkvnWB
+      PwMwbuICkgo+x2WPNM3dUbUTt99Cam4i5vuCEPJrUKG5fwBAr/P0jo//RAAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
