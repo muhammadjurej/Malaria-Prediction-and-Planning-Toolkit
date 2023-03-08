@@ -46,6 +46,18 @@ These tools train multiple models to predict Annual Paracite Incidence and Endem
 - maximum temperature
 - average temperature
 - total population
+ 
+ 
+before using the dashboard, we have to install tabpy 
+ ```
+ pip install tabpy
+ ```
+ 
+ and then run this command in your terminal
+ 
+ ```
+ tabpy
+ ```
 
 and below is the display of the dashboard
 
