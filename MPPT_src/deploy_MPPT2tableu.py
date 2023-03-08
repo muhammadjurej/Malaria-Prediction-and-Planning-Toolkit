@@ -18,7 +18,7 @@ def prediksi_endemisitas(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8,
       data_test = scaler.fit_transform(data_test.reshape(data_test.shape[-1], -1)).reshape(1,-1)
       result = model.predict(data_test)[0]
       
-      return endemisitas_class[result]
+      return "Status Endemisitas: " + '"' + endemisitas_class[result] + '"'
 
 def prediksi_api( _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9, _arg10, _arg11, _arg12, _arg13, _arg14, _arg15):
       import numpy as np
@@ -33,7 +33,7 @@ def prediksi_api( _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9,
       data_test = scaler.fit_transform(data_test.reshape(data_test.shape[-1], -1)).reshape(1,-1)
       result = model.predict(data_test)[0]
       
-      return str(result)
+      return "Hasil API: " + str(round(result, 2))
       
 def deploy(model_type, connection):
       log.info('model deploy to tableau')
